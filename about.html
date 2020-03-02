@@ -1,0 +1,320 @@
+<html>
+
+<head>
+    <title>about me</title>
+    <meta>
+    <script>
+        function fn1() {
+            document.getElementById('side').style = 'left:9%;transition:0.8s;';
+            document.getElementById('signup').style = 'right:3%;transition:0.8s;';
+            document.getElementById('welcome').style = 'opacity:0%;transition:0.8s;';
+        }
+        function fn2() {
+            document.getElementById('side').style = 'left:-80%;transition:0.8s;';
+            document.getElementById('signup').style = 'right:-10%;transition:0.8s;';
+            document.getElementById('welcome').style = 'opacity:90%;transition:0.8s;';
+        }
+    </script>
+</head>
+<style>
+    img.bgimage {
+        position: relative;
+        height: 130%;
+        width: 100%;
+        opacity: 100%;
+        margin: -8px;
+        transition: 0.7s;
+    }
+
+    div.navbar1 {
+        position: fixed;
+        top: 2%;
+        left: -110%;
+        box-shadow: 6px 7px 25px rgb(85, 85, 85);
+        height: 500px;
+        width: 80%;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    nav.navbar2 {
+        color: white;
+        font-size: 23px;
+        padding: 10px;
+    }
+
+    nav.navbar2 a {
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        transition: 0.6s;
+    }
+
+    nav.navbar2 a:hover {
+        color: black;
+        background-color: #d48166;
+        font-size: 33px;
+        box-shadow: 3px 3px 100px #e6e2dd;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    button.sidebar img {
+        position: fixed;
+        font-size: 23px;
+        color: #e6e2dd;
+        background-color: #d48166;
+        top: 3%;
+        left: 1%;
+        height: 40px;
+        width: 40px;
+        border: none;
+        border-radius: 6px;
+        transition: 0.5s;
+        opacity: 75%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+
+    button.sidebar img:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        box-shadow: 1px 1px 2px white;
+    }
+
+    button.sidebar:hover {
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+
+    button.login {
+        position: absolute;
+        background-color: #d48166;
+        /*height: 40px;
+            width: 90px;*/
+        font-size: 23px;
+        border: none;
+        padding: 3px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        transition: 0.6s;
+    }
+
+    button.login:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        color: white;
+    }
+
+    button.close {
+        position: absolute;
+        left: 2%;
+        background-color: #d48166;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        font-size: 15px;
+        border: none;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        transition: 0.6s;
+    }
+
+    button.close:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        color: white;
+    }
+
+    button.top {
+        position: fixed;
+        font-size: 13px;
+        color: #e6e2dd;
+        background-color: #d48166;
+        top: 40%;
+        left: -1%;
+        height: 40px;
+        width: 100px;
+        border: none;
+        border-radius: 6px;
+        transition: 0.5s;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    button.top:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        color: white;
+    }
+
+    div i.info,
+    h2 {
+        color: #d48166;
+    }
+
+    /*div img.myphoto{
+            height: 200px;
+            width: 200px;
+            border-top-right-radius: 35px;
+            border-bottom-left-radius: 35px;
+            box-shadow: 5px 5px 15px black;
+            transition: 0.7s;
+        }
+        div img.myphoto:hover{
+            height: 220px;
+            width: 220px;
+            border-top-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            box-shadow: 4px 4px 15px #d48166;
+        }*/
+    button.signup {
+        position: fixed;
+        top: 2%;
+        right: -10%;
+        background-color: #d48166;
+        /*height: 40px;
+            width: 90px;*/
+        font-size: 23px;
+        border: none;
+        padding: 3px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        transition: 0.6s;
+    }
+
+    button.signup:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        color: white;
+    }
+
+    #search {
+        height: 40px;
+        width: 350px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 15px 15px 30px black;
+    }
+
+    #searchbut {
+        background-color: #d48166;
+        height: 40px;
+        width: 70px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 15px 15px 30px black;
+        transition: 0.3s;
+    }
+
+    #searchbut:hover {
+        height: 43px;
+        width: 73px;
+    }
+
+    div.welcome b {
+        position: absolute;
+        top: 2%;
+        left: 32%;
+        color: white;
+        font-size: 90px;
+        font-family: Courier New;
+        opacity: 90%;
+        pointer-events: none;
+    }
+
+    /*div.welcome i {
+        position: absolute;
+        top: 32%;
+        left: 37%;
+        color: white;
+        font-size: 30px;
+        font-family: bookman;
+        border: 1px solid black;
+        padding: 3px;
+        box-shadow: 2px 2px 10px black;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }*/
+
+    #social {
+        height: 40px;
+        width: 40px;
+        box-shadow: 10px 10px 20px black;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+
+    #social:hover {
+        height: 46px;
+        width: 46px;
+    }
+
+    /*div.quote{
+            position: absolute;
+            top:53%;
+            left:40%;
+        }
+        div.quote b{
+            font-size: 60px;
+            color:#d48166;
+        }
+        div.quote p{
+            font-size: 25px;
+            color:white;
+        }*/
+</style>
+
+<body>
+    <img class="bgimage" src="backimage.jpg" id="top">
+    <button class="sidebar" onclick="fn1()"><img src="sidebar.jpg"></button>
+    <div class="navbar1" id="side">
+        <nav class="navbar2">
+            <button class="close" onclick="fn2()">close</button>
+            <a href="">Home</a>&nbsp;
+            <a href="">About</a>&nbsp;&nbsp;
+            <a href=" ">Location</a>&nbsp;&nbsp;
+            <a href=" ">Sunject</a>&nbsp;&nbsp;
+            <a href="">Project</a>&nbsp;&nbsp;
+            <a href="">Achivement</a>&nbsp;&nbsp;
+            <a href="">HTML</a>&nbsp;&nbsp;
+            <button class="login">Login</button>
+        </nav><br>
+        <i class="info">By kishan beladiya</i><br><br><br>
+        <!--<img class="myphoto" src="myphoto.jpg"><br>
+            <h2>Kishan Beladiya</h2>-->
+        <input type="search" name="" id="search" placeholder="Search...." />
+        <button id="searchbut">Search</button>
+        <br><br><br><br>
+        <nav class="social">
+            <a href=""><img id="social" src="facebook.png"></a>&nbsp;&nbsp;
+            <a href=""><img id="social" src="instagram.png"></a>&nbsp;&nbsp;
+            <a href=""><img id="social" src="linkedin.png"></a>&nbsp;&nbsp;
+            <a href=""><img id="social" src="twitter.png"></a>
+        </nav>
+    </div>
+    <a href="#top"><button class="top">Back to top</button></a><br><br>
+
+<button class="signup" id="signup">Sign Up</button>
+<div class="welcome" id="welcome">
+    <b>About me</b>
+</div>
+<!--<div class="quote">
+    <b>“Getting a quality</b><br><p>websiteis not an expenses but</p><br><b>rather an investment.”</b>
+    <p>― Dr. Christopher Dayagdag</p>
+</div>-->
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html> 
+    <head>
+        <title>Login</title>
+    </head>
+    <style>
+        form{
+            text-align: center;
+            color:#d48166;
+            background-color: black;
+        }
+        button{
+            background-color: #d48166;
+            border:none;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 8px;
+            color: white;
+            box-shadow: 2px 2px 8px black;
+            transition: 0.6s;
+        }
+        button:hover{
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        input{
+            border:1px solid #d48166;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+    <body bgcolor="black">
+        <form action="index.html" method="POST">
+        <h1 class="heading">Login Form</h1>
+        <br>
+        <label>First Name</label>&nbsp;
+        <input type="text" name="fname" placeholder="First Name" required>
+        <br><br>
+        <label>Last Name</label>&nbsp;
+        <input type="text" name="lname" placeholder="Last Name" required>
+        <br><br>
+        <label>Password</label>&nbsp;&nbsp;
+        <input type="password" name="pass" placeholder="Password" required>
+        <br><br>
+        <label>E-mail</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" name="email" placeholder="E-mail" required>
+        <br><br>
+        <button type="submit">submit</button>&nbsp;&nbsp;
+        <button type="reset">reset</button>
+        </form>
+        <?php
+            if($_SERVER["REQUEST_METHOD"]=="POST")
+            {
+                $name=$_POST['fname'];
+                if(empty($name))
+                {
+                    echo "Name is empty in Login Form";
+                }
+                else
+                {
+                    echo $name;
+                }
+            }
+            $_SESSION['$name']= $var_value;
+        ?>
+    </body>
+        
+</html>

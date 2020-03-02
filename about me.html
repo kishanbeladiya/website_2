@@ -1,0 +1,655 @@
+<html>
+
+<head>
+    <title>About me</title>
+    <meta>
+    <script>
+        function fn1() {
+            document.getElementById('side').style = 'left:9%;transition:1s;';
+            document.getElementById('signup').style = 'right:3%;transition:1s;';
+            document.getElementById('welcome').style = 'opacity:0;transition:1s;';
+            document.getElementById('about').style = 'opacity:0;transition:1s;';
+        }
+        function fn2() {
+            document.getElementById('side').style = 'left:-110%;transition:1s;';
+            document.getElementById('signup').style = 'right:-40%;transition:1s;';
+            document.getElementById('welcome').style = 'opacity:0.9;transition:1s;';
+            document.getElementById('about').style = 'opacity:1;transition:1s;';
+        }
+        function fn3()
+        {
+            document.getElementById('name1').style='opacity:0%;transition:1.5s;transform:rotateY(180deg);';
+            document.getElementById('name2').style = 'opacity:100%;transition:3s;';
+            /*document.getElementById('name2').style = 'opacity:0%;transition:0.8s;';*/
+        }
+        function fn4(){
+            document.getElementById('name2').style = 'opacity:0%;transition:1.5s;';
+            document.getElementById('name1').style = 'opacity:100%;transition:3s;';
+        }
+        function fn5() {
+                document.getElementById('name3').style = 'opacity:0%;transition:1.5s;transform:rotateY(180deg);';
+                document.getElementById('name4').style = 'opacity:100%;transition:3s;';
+                /*document.getElementById('name2').style = 'opacity:0%;transition:0.8s;';*/
+            }
+        function fn6() {
+                document.getElementById('name4').style = 'opacity:0%;transition:1.5s;';
+                document.getElementById('name3').style = 'opacity:100%;transition:3s;';
+            }
+        function fn7() {
+                    document.getElementById('name5').style = 'opacity:0%;transition:1.5s;transform:rotateY(180deg);';
+                    document.getElementById('name6').style = 'opacity:100%;transition:3s;';
+                    /*document.getElementById('name2').style = 'opacity:0%;transition:0.8s;';*/
+                }
+        function fn8() {
+                    document.getElementById('name6').style = 'opacity:0%;transition:1.5s;';
+                    document.getElementById('name5').style = 'opacity:100%;transition:3s;';
+                }
+        function fn9() {
+                document.getElementById('name7').style = 'opacity:0%;transition:1.5s;transform:rotateY(180deg);';
+                document.getElementById('name8').style = 'opacity:100%;transition:3s;';
+                /*document.getElementById('name2').style = 'opacity:0%;transition:0.8s;';*/
+            }
+        function fn10() {
+                document.getElementById('name8').style = 'opacity:0%;transition:1.5s;';
+                document.getElementById('name7').style = 'opacity:100%;transition:3s;';
+            }  
+        function fn11() {
+                document.getElementById('name9').style = 'opacity:0%;transition:1.5s;transform:rotateY(180deg);';
+                document.getElementById('name10').style = 'opacity:100%;transition:3s;';
+                /*document.getElementById('name2').style = 'opacity:0%;transition:0.8s;';*/
+            }
+        function fn12() {
+                document.getElementById('name10').style = 'opacity:0%;transition:1.5s;';
+                document.getElementById('name9').style = 'opacity:100%;transition:3s;';
+            }           
+    </script>
+</head>
+<style>
+    *{
+        margin: -0.3px;
+        padding:-1px;
+    }
+    img.bgimage {
+        position: relative;
+        height: 130%;
+        width: 100%;
+        opacity: 60%;
+        margin: -8px;
+        transition: 0.7s;
+    }
+
+    div.navbar1 {
+        position: fixed;
+        top: 2%;
+        left: -110%;
+        box-shadow: 6px 7px 25px rgb(85, 85, 85);
+        height: 500px;
+        width: 79%;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    nav.navbar2 {
+        color: white;
+        font-size: 23px;
+        padding: 10px;
+    }
+
+    nav.navbar2 a {
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        transition: 0.6s;
+    }
+
+    nav.navbar2 a:hover {
+        color: black;
+        background-color: #d48166;
+        font-size: 30px;
+        box-shadow: 3px 3px 100px #e6e2dd;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    button.sidebar img {
+        position: fixed;
+        font-size: 23px;
+        color: #e6e2dd;
+        background-color: #d48166;
+        top: 3%;
+        left: 1%;
+        height: 40px;
+        width: 40px;
+        border: none;
+        border-radius: 6px;
+        transition: 0.5s;
+        opacity: 75%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+
+    button.sidebar img:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        box-shadow: 1px 1px 2px white;
+    }
+
+    button.sidebar:hover {
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+
+    button.login {
+        position: absolute;
+        background-color: #d48166;
+        /*height: 40px;
+            width: 90px;*/
+        font-size: 23px;
+        border: none;
+        padding: 3px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        transition: 0.6s;
+    }
+
+    button.login:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        color: white;
+    }
+
+    button.close {
+        position: absolute;
+        left: 2%;
+        background-color: #d48166;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        font-size: 15px;
+        border: none;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        transition: 0.6s;
+    }
+
+    button.close:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        color: white;
+    }
+
+    button.top {
+        position: fixed;
+        font-size: 13px;
+        color: #e6e2dd;
+        background-color: #d48166;
+        top: 40%;
+        left: -1%;
+        height: 40px;
+        width: 100px;
+        border: none;
+        border-radius: 6px;
+        transition: 0.5s;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    button.top:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        color: white;
+    }
+
+    div i.info,
+    h2 {
+        color: #d48166;
+    }
+
+    /*div img.myphoto{
+            height: 200px;
+            width: 200px;
+            border-top-right-radius: 35px;
+            border-bottom-left-radius: 35px;
+            box-shadow: 5px 5px 15px black;
+            transition: 0.7s;
+        }
+        div img.myphoto:hover{
+            height: 220px;
+            width: 220px;
+            border-top-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            box-shadow: 4px 4px 15px #d48166;
+        }*/
+    button.signup {
+        position: fixed;
+        top: 2%;
+        right: -10%;
+        background-color: #d48166;
+        /*height: 40px;
+            width: 90px;*/
+        font-size: 23px;
+        border: none;
+        padding: 3px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        transition: 0.6s;
+    }
+
+    button.signup:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        color: white;
+    }
+
+    #search {
+        height: 40px;
+        width: 350px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 15px 15px 30px black;
+    }
+
+    #searchbut {
+        background-color: #d48166;
+        height: 40px;
+        width: 70px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 15px 15px 30px black;
+        transition: 0.3s;
+    }
+
+    #searchbut:hover {
+        height: 43px;
+        width: 73px;
+    }
+
+    div.welcome b {
+        position: absolute;
+        top: 4%;
+        left: 32%;
+        color: white;
+        font-size: 90px;
+        font-family: Courier New;
+        opacity:90%;
+        pointer-events: none;
+    }
+
+    /*div.welcome i {
+        position: absolute;
+        top: 32%;
+        left: 37%;
+        color: white;
+        font-size: 30px;
+        font-family: bookman;
+        border: 1px solid black;
+        padding: 3px;
+        box-shadow: 2px 2px 10px black;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }*/
+
+    #social {
+        height: 40px;
+        width: 40px;
+        box-shadow: 10px 10px 20px black;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+
+    #social:hover {
+        height: 46px;
+        width: 46px;
+    }
+
+    /*div.quote{
+            position: absolute;
+            top:53%;
+            left:40%;
+        }
+        div.quote b{
+            font-size: 60px;
+            color:#d48166;
+        }
+        div.quote p{
+            font-size: 25px;
+            color:white;
+        }*/
+        /*div.name{
+            position: absolute;
+            top:33%;
+            left:15%;
+            width:8%;
+          transition: 0.7s;
+        }*/
+        div.name1{
+            position: absolute;
+            top:30%;
+            left:15%;
+            box-shadow: 10px 10px 20px black;
+            width: 15%;
+            height: 20%;
+            text-align: center;
+            transition: 0.8s;
+            opacity: 100%;
+            border:4px solid white;
+        }
+        div.name2{
+            position: absolute;
+            top:30%;
+            left:15%;
+            box-shadow: 10px 10px 40px black;
+            border:5px solid #d48166;
+            width: 15%;
+            height: 20%;
+            text-align: center;
+            transition: 0.8s;
+            opacity: 0%;
+        }
+        div.name1 b{
+            position:relative;
+            top:25%;
+            color: white;
+            font-family: Courier New;
+            font-size: 50px;
+        }
+        div.name2 h3{
+            position:relative;
+            top:25%;
+            color:white;
+            font-family: Courier New;
+            font-size: 30px;
+            text-shadow: 5px 5px 15px black;
+        }
+
+
+
+
+        div.name3{
+            position: absolute;
+            top:30%;
+            left:35%;
+            box-shadow: 10px 10px 20px black;
+            width: 15%;
+            height: 20%;
+            text-align: center;
+            transition: 0.8s;
+            opacity: 100%;
+            border:4px solid white;
+        }
+        div.name4{
+            position: absolute;
+            top:30%;
+            left:35%;
+            box-shadow: 10px 10px 40px black;
+            border:5px solid #d48166;
+            width: 15%;
+            height: 20%;
+            text-align: center;
+            transition: 0.8s;
+            opacity: 0%;
+        }
+        div.name3 b{
+            position:relative;
+            top:25%;
+            color: white;
+            font-family: Courier New;
+            font-size: 47px;
+        }
+        div.name4 h3{
+            position:relative;
+            top:25%;
+            color:white;
+            font-family: Courier New;
+            font-size: 30px;
+            text-shadow: 5px 5px 15px black;
+        }
+
+
+
+        div.name5{
+            position: absolute;
+            top:30%;
+            left:55%;
+            box-shadow: 10px 10px 20px black;
+            width: 15%;
+            height: 20%;
+            text-align: center;
+            transition: 0.8s;
+            opacity: 100%;
+            border:4px solid white;
+        }
+        div.name6{
+            position: absolute;
+            top:30%;
+            left:55%;
+            box-shadow: 10px 10px 40px black;
+            border:5px solid #d48166;
+            width: 15%;
+            height: 20%;
+            text-align: center;
+            transition: 0.8s;
+            opacity: 0%;
+        }
+        div.name5 b{
+            position:relative;
+            top:25%;
+            color: white;
+            font-family: Courier New;
+            font-size: 47px;
+        }
+        div.name6 h3{
+            position:relative;
+            top:25%;
+            color:white;
+            font-family: Courier New;
+            font-size: 30px;
+            text-shadow: 5px 5px 15px black;
+        }
+
+
+
+
+        div.name7{
+            position: absolute;
+            top:30%;
+            left:75%;
+            box-shadow: 10px 10px 20px black;
+            width: 15%;
+            height: 20%;
+            text-align: center;
+            transition: 0.8s;
+            opacity: 100%;
+            border:4px solid white;
+        }
+        div.name8{
+            position: absolute;
+            top:30%;
+            left:75%;
+            box-shadow: 10px 10px 40px black;
+            border:5px solid #d48166;
+            width: 15%;
+            height: 20%;
+            text-align: center;
+            transition: 0.8s;
+            opacity: 0%;
+        }
+        div.name7 b{
+            position:relative;
+            top:25%;
+            color: white;
+            font-family: Courier New;
+            font-size: 47px;
+        }
+        div.name8 h3{
+            position:relative;
+            top:25%;
+            color:white;
+            font-family: Courier New;
+            font-size: 30px;
+            text-shadow: 5px 5px 15px black;
+        }
+
+
+
+
+        div.name9{
+            position: absolute;
+            top:65%;
+            left:15%;
+            box-shadow: 10px 10px 20px black;
+            width: 15%;
+            height: 20%;
+            text-align: center;
+            transition: 0.8s;
+            opacity: 100%;
+            border:4px solid white;
+        }
+        div.name10{
+            position: absolute;
+            top:65%;
+            left:15%;
+            box-shadow: 10px 10px 40px black;
+            border:5px solid #d48166;
+            width: 15%;
+            height: 20%;
+            text-align: center;
+            transition: 0.8s;
+            opacity: 0%;
+        }
+        div.name9 b{
+            position:relative;
+            top:25%;
+            color: white;
+            font-family: Courier New;
+            font-size: 47px;
+        }
+        div.name10 h3{
+            position:relative;
+            text-align: center;
+            top:25%;
+            color:white;
+            font-family: Courier New;
+            font-size: 30px;
+            text-shadow: 5px 5px 15px black;
+        }
+        #copyright{
+            color:white;
+            text-align: left;
+            text-shadow: 2px 2px 10px black;
+            font-size: 20px;
+        }
+        img.my{
+            height: 150px;
+            width: 150px;
+            border-top-left-radius:10px;
+            border-bottom-right-radius:10px;
+            box-shadow: 10px 10px 20px black;
+            transition: 0.7s;
+        }
+        img.my:hover{
+            border-top-right-radius:10px;
+            border-bottom-left-radius:10px;
+            border-top-left-radius:0px;
+            border-bottom-right-radius:0px;
+            box-shadow: 2px 2px 1px #d48166;
+        }
+
+</style>
+
+<body bgcolor="black">
+    <img class="bgimage" src="backimage.jpg" id="top">
+    <button class="sidebar" onclick="fn1()"><img src="sidebar.jpg"></button>
+    <div class="navbar1" id="side">
+        <nav class="navbar2">
+            <button class="close" onclick="fn2()">close</button>
+            <a href="index.html">Home</a>&nbsp;
+            <a href="about me.html">About</a>&nbsp;&nbsp;
+            <a href="location.html">Location</a>&nbsp;&nbsp;
+            <a href="subject.html">Subjects</a>&nbsp;&nbsp;
+            <a href="project.html">Project</a>&nbsp;&nbsp;
+            <a href="achievement.html">Achievement</a>&nbsp;&nbsp;
+            <a href="html.html">HTML</a>&nbsp;&nbsp;
+            <button class="login" onclick="window.location.href='login.html'">Login</button>
+        </nav><br>
+        <i class="info">By kishan beladiya</i><br><br><br>
+        <!--<img class="myphoto" src="myphoto.jpg"><br>
+            <h2>Kishan Beladiya</h2>-->
+        <input type="search" name="" id="search" placeholder="Search...." />
+        <button id="searchbut">Search</button>
+        <br><br>
+        <img class="my" src="myphoto.jpg">
+        <br><br><br><br>
+        <nav class="social">
+            <a href=""><img id="social" src="facebook.png"></a>&nbsp;&nbsp;
+            <a href=""><img id="social" src="instagram.png"></a>&nbsp;&nbsp;
+            <a href=""><img id="social" src="linkedin.png"></a>&nbsp;&nbsp;
+            <a href=""><img id="social" src="twitter.png"></a>
+        </nav>
+        <br><br><br><br><br><br><br>
+        <p id="copyright">&nbsp;Copyright @ 2020 Kishan Beladiya. All Rights Reserved</p>
+    </div>
+    <a href="#top"><button class="top">Back to top</button></a><br><br>
+
+<button class="signup" id="signup">Sign Up</button>
+<div class="welcome" id="welcome">
+    <b>About me</b>
+</div>
+<!--<div class="quote">
+    <b>“Getting a quality</b><br><p>websiteis not an expenses but</p><br><b>rather an investment.”</b>
+    <p>― Dr. Christopher Dayagdag</p>
+</div>-->
+<div class="about" id="about">  
+    <div class="rotate1">
+        <div class="name1" id="name1" onmouseover="fn3()"><b>Name</b></div>
+        <div class="name2" id="name2" onmouseover="fn3()" onmouseout="fn4()"><h3>Kishan Beladiya</h3></div>
+    </div>
+
+    <div class="rotate1">
+        <div class="name3" id="name3" onmouseover="fn5()"><b>Collage</b></div>
+        <div class="name4" id="name4" onmouseover="fn5()" onmouseout="fn6()">
+            <h3>IIIT KOTA</h3>
+        </div>
+    </div>
+
+    <div class="rotate1">
+        <div class="name5" id="name5" onmouseover="fn7()"><b>Branch</b></div>
+        <div class="name6" id="name6" onmouseover="fn7()" onmouseout="fn8()">
+            <h3>Computer Science</h3>
+        </div>
+    </div>
+
+    <div class="rotate1">
+        <div class="name7" id="name7" onmouseover="fn9()"><b>Year</b></div>
+        <div class="name8" id="name8" onmouseover="fn9()" onmouseout="fn10()">
+            <h3>1st Year</h3>
+        </div>
+    </div><br><br><br>
+
+    <div class="rotate1">
+        <div class="name9" id="name9" onmouseover="fn11()"><b>Hobby</b></div>
+        <div class="name10" id="name10" onmouseover="fn11()" onmouseout="fn12()">
+            <h3>Reading , Badmintan</h3>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+
+</html>
